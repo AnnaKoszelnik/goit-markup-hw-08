@@ -20,6 +20,14 @@
   }
 }
 
+.nav,
+.menu {
+  display: none;
+  @include mq(tablet) {
+    display: flex;
+  }
+}
+
 .link {
   text-decoration: none;
   font-weight: 500;

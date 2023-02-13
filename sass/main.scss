@@ -1,3 +1,4 @@
+@use "./utils/mixins" as *;
 @import "./utils/vars";
 
 body {
@@ -5,16 +6,9 @@ body {
   color: $mainColor;
   margin: 0;
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-.section {
-  padding: 94px 0;
-}
-
-@use "./utils/mixins" as *;
+@import "./components/section";
+@import "./components/container";
 @import "./components/header";
 @import "./components/navigation";
 @import "./components/main-section";
