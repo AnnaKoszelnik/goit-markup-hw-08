@@ -1,0 +1,32 @@
+@import "./utils/vars";
+
+body {
+  font-family: $fontFamily;
+  color: $mainColor;
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/main-section";
+@import "./components/modal";
+@import "./components/form";
+@import "./components/section-1";
+@import "./components/what-we-do-section";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/newsletter";
+@import "./components/footer-aside";
+@import "./components/footer";
+
+@import "./components/portfolio-header";
+@import "./components/portfolio-battons-menu";
+@import "./components/portfolio-cards";

@@ -1,0 +1,32 @@
+.clients-section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $mainColor;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.clients-section__list {
+  display: flex;
+  justify-content: space-between;
+
+  .clients-section__icons {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    padding: 15px 31px;
+    fill: #afb1b8;
+    transition-property: background-color;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $hoverColor;
+      cursor: pointer;
+      fill: $hoverColor;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

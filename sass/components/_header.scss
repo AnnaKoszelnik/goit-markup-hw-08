@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+
+  .logo {
+    text-decoration: none;
+    font-family: $fontFamily;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $hoverColor;
+
+    &--black {
+      color: #000000;
+    }
+  }
+}

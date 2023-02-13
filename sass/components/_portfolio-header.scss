@@ -1,0 +1,15 @@
+.portfolio__header {
+  border-bottom: 1px solid #ececec;
+}
+
+.menu__underline-2::after {
+  display: block;
+  content: "";
+  width: 58px;
+  height: 4px;
+  background: $hoverColor;
+  border-radius: 2px;
+  margin-left: 46px;
+  position: relative;
+  top: 29px;
+}

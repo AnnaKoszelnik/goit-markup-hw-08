@@ -1,0 +1,68 @@
+.newsletter__input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.03em;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  position: relative;
+  top: 50px;
+  left: -200px;
+  outline: none;
+  padding-left: 16px;
+
+  &:focus {
+    border-color: $hoverColor;
+  }
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.newsletter__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #2196f3;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 76px 10px 42px;
+  position: relative;
+  left: 370px;
+
+  .button__icon {
+    position: absolute;
+    fill: #ffffff;
+    bottom: 11px;
+    right: 24px;
+  }
+}
+
+.newsletter {
+  margin-left: 78px;
+
+  .newsletter__form {
+    margin-top: 20px;
+
+    .footer__so-me-title {
+      font-family: "roboto";
+      font-weight: 700;
+      font-size: 14px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+  }
+}

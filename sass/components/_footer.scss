@@ -1,0 +1,50 @@
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .footer-page {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  &__social-links {
+    margin-left: 70px;
+  }
+}
+
+.footer__so-me-title {
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer__so-me-elements {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.footer__icons--active {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: #ffffff;
+  transition-property: background-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $hoverColor;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
