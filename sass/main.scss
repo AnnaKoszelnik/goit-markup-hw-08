@@ -14,6 +14,7 @@ body {
   padding: 94px 0;
 }
 
+@use "./utils/mixins" as *;
 @import "./components/header";
 @import "./components/navigation";
 @import "./components/main-section";
@@ -26,7 +27,6 @@ body {
 @import "./components/newsletter";
 @import "./components/footer-aside";
 @import "./components/footer";
-
 @import "./components/portfolio-header";
 @import "./components/portfolio-battons-menu";
 @import "./components/portfolio-cards";
