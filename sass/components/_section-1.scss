@@ -28,3 +28,9 @@
     margin: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .section__cards {
+    display: inline-block;
+  }
+}

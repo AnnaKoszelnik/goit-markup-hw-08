@@ -30,3 +30,12 @@
     }
   }
 }
+
+@media all and (max-width: 768px) {
+  .clients-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}

@@ -74,3 +74,9 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .team-section__images {
+    display: inline-block;
+  }
+}

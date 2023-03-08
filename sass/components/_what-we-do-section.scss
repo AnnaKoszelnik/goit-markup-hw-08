@@ -31,3 +31,9 @@
     top: 224px;
   }
 }
+
+@media all and (max-width: 768px) {
+  .what-we-do-section {
+    display: none;
+  }
+}

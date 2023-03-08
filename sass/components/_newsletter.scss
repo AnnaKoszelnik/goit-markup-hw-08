@@ -66,3 +66,14 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .newsletter {
+    position: relative;
+    left: -300px;
+  }
+
+  .newsletter__button {
+    left: -300px;
+  }
+}
