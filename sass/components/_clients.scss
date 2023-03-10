@@ -11,12 +11,14 @@
 
 .clients-section__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 30px) / 2);
 
   .clients-section__icons {
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    padding: 15px 31px;
+    padding: 16px 52px;
     fill: #afb1b8;
     transition-property: background-color;
 
@@ -29,13 +31,13 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
-}
 
-@media all and (max-width: 768px) {
-  .clients-section__list {
+  @include mq(desktop) {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    flex-basis: calc((100% - 30px) / 2);
+    justify-content: space-between;
+
+    .clients-section__icons {
+      padding: 15px 31px;
+    }
   }
 }

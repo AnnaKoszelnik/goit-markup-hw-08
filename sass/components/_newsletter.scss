@@ -5,7 +5,7 @@
   line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -13,14 +13,18 @@
   background-color: #2f303a;
   display: flex;
   outline: none;
-  margin-right: 12px;
   padding-left: 16px;
+  margin: 0 auto;
 
   &:focus {
     border-color: $hoverColor;
   }
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+  @include mq(desktop) {
+    width: 358px;
+    margin-right: 12px;
   }
 }
 
@@ -42,19 +46,20 @@
   border-radius: 4px;
   padding: 10px 28px 10px 42px;
   white-space: nowrap;
+  margin: 20px auto;
 
   .button__icon {
     margin-left: 24px;
     fill: #ffffff;
   }
+  @include mq(desktop) {
+    margin: 0;
+  }
 }
 
 .newsletter {
-  margin-left: 78px;
-
   .newsletter__form {
     margin-top: 20px;
-    display: flex;
 
     .footer__so-me-title {
       font-family: "roboto";
@@ -64,15 +69,8 @@
       text-transform: uppercase;
     }
   }
-}
 
-@media screen and (max-width: 768px) {
-  .newsletter {
-    position: relative;
-    left: -300px;
-  }
-
-  .newsletter__button {
-    left: -300px;
+  @include mq(desktop) {
+    margin-left: 78px;
   }
 }
