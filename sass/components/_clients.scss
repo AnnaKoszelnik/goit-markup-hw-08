@@ -13,12 +13,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc((100% - 30px) / 2);
 
   .clients-section__icons {
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    padding: 16px 52px;
+    padding: 16px 50px;
     fill: #afb1b8;
     transition-property: background-color;
 

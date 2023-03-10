@@ -13,8 +13,10 @@
   }
 
   &__images {
-    display: flex;
-    justify-content: space-between;
+    @include mq(desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__cards {
@@ -72,11 +74,5 @@
         }
       }
     }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .team-section__images {
-    display: inline-block;
   }
 }

@@ -2,11 +2,14 @@
   display: block;
   flex-basis: auto;
 
-  .section__cards-icon {
+  .section__cards-img {
     background-color: #f5f4fa;
     border-radius: 4px;
-    display: block;
     padding: 25px 190px;
+  }
+
+  .section__cards-icon {
+    margin: 0 auto;
   }
 
   .section__subtitle {
