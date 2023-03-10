@@ -1,6 +1,8 @@
 @use "./utils/mixins" as *;
 @import "./utils/vars";
 @import "./utils/globals";
+
+@import "./components/base";
 @import "./components/section";
 @import "./components/header";
 @import "./components/navigation";

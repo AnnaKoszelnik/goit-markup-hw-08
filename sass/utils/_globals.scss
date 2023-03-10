@@ -1,10 +1,14 @@
-body {
-  font-family: $fontFamily;
-  color: $mainColor;
-  margin: 0;
-}
-
 .container {
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
+
+  @include mq(phone) {
+    width: 448px;
+  }
+  @include mq(tablet) {
+    width: 720px;
+  }
+  @include mq(desktop) {
+    width: 1200px;
+  }
 }
