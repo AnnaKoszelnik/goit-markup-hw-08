@@ -1,14 +1,7 @@
 @use "./utils/mixins" as *;
 @import "./utils/vars";
-
-body {
-  font-family: $fontFamily;
-  color: $mainColor;
-  margin: 0;
-}
-
+@import "./utils/globals";
 @import "./components/section";
-@import "./components/container";
 @import "./components/header";
 @import "./components/navigation";
 @import "./components/main-section";
