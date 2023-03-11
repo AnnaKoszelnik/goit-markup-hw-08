@@ -1,14 +1,3 @@
-.form__input {
-  display: block;
-  width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  margin-bottom: 10px;
-  padding-left: 42px;
-  outline: none;
-}
-
 .form__input--active:focus-within,
 .form__input:focus {
   fill: #2196f3;
@@ -51,13 +40,18 @@
 
 .form__input {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
   outline: none;
+
+  @include mq(desktop) {
+    width: 448px;
+    height: 40px;
+  }
 
   &--active:focus-within,
   &:focus {
@@ -75,14 +69,19 @@
 }
 
 .form__title {
-  position: absolute;
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
   color: #212121;
   margin: 40px 0 12px 0;
-  left: 70px;
+  padding: 0 40px;
+
+  @include mq(desktop) {
+    left: 70px;
+    position: absolute;
+  }
 }
 
 .form__checkbox {
@@ -102,20 +101,32 @@
 
 .form__signup-terms {
   position: absolute;
+  font-size: 12px;
+  right: 0;
+  left: 0;
   bottom: 120px;
-  right: 40px;
+  padding: 0 40px;
   color: $secondColor;
   cursor: pointer;
+  text-align: center;
+
+  @include mq(desktop) {
+    right: 40px;
+  }
 
   &::before {
     display: block;
     position: absolute;
-    top: 2px;
-    left: -23px;
+    top: 0;
     content: "";
     width: 16px;
     height: 15px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Cpath fill='%23212121' d='M14.222 1.667v11.666H1.778V1.667h12.444Zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0Z'/%3E%3C/svg%3E");
+
+    @include mq(desktop) {
+      left: -23px;
+      top: 2px;
+    }
   }
 }
 
@@ -141,7 +152,11 @@
   border-radius: 4px;
   padding: 10px 76px;
   bottom: 40px;
-  left: 164px;
+  left: 125px;
+
+  @include mq(desktop) {
+    left: 164px;
+  }
 }
 
 .form__comment {
