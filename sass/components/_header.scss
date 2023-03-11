@@ -4,6 +4,7 @@
   height: 80px;
 
   .logo {
+    margin-left: 15px;
     text-decoration: none;
     font-family: $fontFamily;
     font-weight: 700;
@@ -14,6 +15,9 @@
 
     &--black {
       color: #000000;
+    }
+    @include mq(desktop) {
+      margin-left: 0;
     }
   }
 }
