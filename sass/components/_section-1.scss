@@ -2,10 +2,25 @@
   display: block;
   flex-basis: auto;
 
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section__cards-item {
+    width: 354px;
+  }
+
   .section__cards-img {
     background-color: #f5f4fa;
     border-radius: 4px;
     padding: 25px 190px;
+
+    @include mq(tablet) {
+      padding: 25px 142px;
+      margin-bottom: 30px;
+    }
   }
 
   .section__cards-icon {
@@ -21,6 +36,11 @@
     color: $mainColor;
     margin: 30px 105px 10px;
     text-align: center;
+
+    @include mq(tablet) {
+      margin: 0;
+      text-align: left;
+    }
   }
 
   .section__description {
