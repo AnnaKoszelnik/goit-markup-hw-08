@@ -12,7 +12,8 @@
 .clients-section__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-between;
+  row-gap: 30px;
 
   .clients-section__icons {
     border: 1px solid #afb1b8;
@@ -20,6 +21,10 @@
     padding: 16px 50px;
     fill: #afb1b8;
     transition-property: background-color;
+
+    @include mq(tablet) {
+      padding: 16px 60px;
+    }
 
     &:hover,
     &:focus {
