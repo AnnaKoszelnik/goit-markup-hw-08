@@ -2,14 +2,14 @@
   border-bottom: 1px solid #ececec;
 }
 
-.menu__underline-2::after {
+.nav__items—underline-2::after {
   display: block;
   content: "";
   width: 58px;
   height: 4px;
   background: $hoverColor;
   border-radius: 2px;
-  margin-left: 46px;
+  margin-left: 60px;
   position: relative;
-  top: 29px;
+  top: 19px;
 }
