@@ -1,11 +1,24 @@
 .portfolio__button-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  margin: 0 auto 34px;
+  margin: 0;
+
+  @include mq(desktop) {
+    margin: 0 auto 34px;
+  }
 }
 
 .portfolio__button--position {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin-bottom: 40px;
+  row-gap: 15px;
+
+  @include mq(desktop) {
+    justify-content: center;
+  }
 }
 
 .portfolio__button-item {
