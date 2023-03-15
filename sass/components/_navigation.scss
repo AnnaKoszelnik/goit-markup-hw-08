@@ -1,14 +1,17 @@
 .nav {
   display: none;
 
-  @include mq(desktop) {
+  @include mq(tablet) {
     display: flex;
-    margin: 0 auto 0 50px;
+    margin-left: 83px;
 
     &__items {
       display: flex;
       list-style-type: none;
       padding-left: 0;
+      margin-right: 101px;
+      font-size: 14px;
+      column-gap: 60px;
 
       &—underline::after {
         display: block;
@@ -17,21 +20,24 @@
         height: 4px;
         background: #2196f3;
         border-radius: 2px;
-        margin-left: 46px;
+        margin-left: 0px;
         position: relative;
-        top: 29px;
+        top: 30px;
       }
     }
   }
 
-  @include mq(tablet) {
+  @include mq(desktop) {
     display: flex;
-    margin: 0 auto 0 27px;
+    margin-left: 50px;
+    margin-right: 315px;
 
     &__items {
       display: flex;
       list-style-type: none;
       padding-left: 0;
+      font-size: 14px;
+      column-gap: 46px;
 
       &—underline::after {
         display: block;
@@ -40,9 +46,9 @@
         height: 4px;
         background: #2196f3;
         border-radius: 2px;
-        margin-left: 60px;
+        margin-left: 0;
         position: relative;
-        top: 19px;
+        top: 30px;
       }
     }
   }
@@ -51,11 +57,9 @@
 .link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $mainColor;
-  margin-left: 60px;
   transition-property: color;
 
   &:hover,
@@ -78,42 +82,34 @@
 .menu {
   display: none;
 
-  @include mq(desktop) {
-    display: flex;
-    list-style-type: none;
-    padding-left: 0;
-
-    &__item {
-      fill: $secondColor;
-      transition-property: fill;
-
-      &:hover,
-      &:active,
-      &:focus {
-        fill: $hoverColor;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
-    }
-  }
-
   @include mq(tablet) {
     display: block;
     list-style-type: none;
     padding-left: 0;
-    padding-right: 15px;
+  }
 
-    &__item {
-      fill: $secondColor;
-      transition-property: fill;
+  @include mq(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-      &:hover,
-      &:active,
-      &:focus {
-        fill: $hoverColor;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
+  &__item {
+    padding-left: 30px;
+    font-size: 12px;
+    fill: $secondColor;
+    transition-property: fill;
+
+    @include mq(desktop) {
+      font-size: 14px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      fill: $hoverColor;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }

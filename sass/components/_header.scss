@@ -3,12 +3,15 @@
   align-items: center;
   height: 60px;
 
+  @include mq(tablet) {
+    height: 80px;
+  }
+
   @include mq(desktop) {
     height: 80px;
   }
 
   .logo {
-    margin-left: 15px;
     text-decoration: none;
     font-family: $fontFamily;
     font-weight: 700;
